@@ -22,24 +22,32 @@
       padding: 60px 20px 40px;
     }
 
-    h1 {
+    .logo-row {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 0.5rem;
+    }
+
+    .logo-row img {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      box-shadow: 0 0 14px rgba(154, 245, 179, 0.15);
+    }
+
+    .logo-row h1 {
       color: #9af5b3;
       font-size: 2.6rem;
-      margin: 0.5rem 0;
+      margin: 0;
       letter-spacing: -0.5px;
     }
 
     p.tagline {
       font-size: 1.15rem;
       opacity: 0.85;
-      margin-top: 0.3rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .app-preview {
-      max-width: 280px;
-      border-radius: 32px;
-      box-shadow: 0 0 40px rgba(154, 245, 179, 0.15);
+      margin-top: 0.6rem;
       margin-bottom: 2.5rem;
     }
 
@@ -103,8 +111,10 @@
 </head>
 <body>
   <header>
-    <img src="https://evolvapp.site/icon.png" alt="Evolv App Icon" width="96" height="96" style="border-radius:22px; box-shadow:0 0 20px rgba(154,245,179,0.15)">
-    <h1>Evolv</h1>
+    <div class="logo-row">
+      <img src="https://evolvapp.site/icon.png" alt="Evolv App Icon">
+      <h1>Evolv</h1>
+    </div>
     <p class="tagline">Grow through consistency. Track your practice. Evolve daily.</p>
     <a href="#" class="btn-appstore">Download on the App Store</a>
   </header>
